@@ -1,0 +1,86 @@
+/* ---- Specification ---- */
+* {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background-color: $bg;
+  color: $grey;
+  line-height: 1.3;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include tablet {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+  @include desktop {
+    padding: 0 60px;
+    max-width: 1920px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+  min-width: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  color: $black;
+}
+
+h1 {
+  @include titleH1;
+}
+
+h2 {
+  @include titleH2;
+}
+
+h3 {
+  @include titleH3;
+}
