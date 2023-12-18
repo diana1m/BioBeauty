@@ -1,0 +1,85 @@
+/* ---- Footer---- */
+@import '/src/styles/resources/';
+
+.footer {
+  background-color: $accent;
+  color: $white;
+  padding-top: 32px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding: 48px 0px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.logo {
+  order: 2;
+  @include tablet {
+    order: 0;
+  }
+
+  svg {
+    width: 70px;
+    height: 75px;
+    @include tablet {
+      width: 180px;
+      height: auto;
+    }
+
+    @include desktop {
+      width: 240px;
+      height: 255px;
+    }
+  }
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include tablet {
+    gap: 36px;
+    align-items: start;
+  }
+}
+
+.linkBtn {
+  background-color: transparent;
+  border: none;
+
+  color: inherit;
+  font-size: 26px;
+  @include transition;
+  cursor: pointer;
+
+  @include tablet {
+    font-size: 36px;
+  }
+
+  @include desktop {
+    font-size: 48px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $btn-hover;
+  }
+
+  &:active {
+    color: $btn-active;
+  }
+}
