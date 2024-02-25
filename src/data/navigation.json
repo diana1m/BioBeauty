@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Про нас",
+    "src": "#about"
+  },
+  {
+    "text": "Товари",
+    "src": "#items"
+  },
+  {
+    "text": "Інгредієнти",
+    "src": "#ingredients"
+  },
+  {
+    "text": "Відгуки",
+    "src": "#feedback"
+  },
+  {
+    "text": "Процес створення",
+    "src": "#creation"
+  },
+  {
+    "text": "Сертифікати та нагороди",
+    "src": "#achievement"
+  }
+]
